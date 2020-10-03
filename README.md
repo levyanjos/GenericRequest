@@ -1,5 +1,5 @@
 # GenericRequest
 
-An example of Generics request in Swift. 
+Implementing Requests from API with Generics. 
 
 ![](genericReturn.gif)
