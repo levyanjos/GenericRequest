@@ -9,7 +9,7 @@
 import Foundation
 
 /// The response object recived by the bored api
-struct BoredResponse: Codable {
+struct BoredResponse: Codable, Descriptable {
     let activity: String
     let accessibility: Double
     let type: String

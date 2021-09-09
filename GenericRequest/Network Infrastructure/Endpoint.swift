@@ -34,7 +34,7 @@ extension Endpoint {
         }
         components.path = path
         var queryItems = [URLQueryItem]()
-     
+        
         switch parameterEncoding {
         case .defaultEncoding:
             if let params = params, method == .get {
@@ -66,7 +66,6 @@ extension Endpoint {
         }
         
         var request = URLRequest(url: url)
-        print(url)
         request.httpMethod = method.rawValue
         request.cachePolicy = .reloadIgnoringLocalCacheData
         if let headers = headers {

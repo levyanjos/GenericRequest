@@ -12,9 +12,9 @@ struct BoredAPIClient: APIClient {
     
     var session: URLSession
     
-    init(section: URLSession? = nil) {
-        if let section = section {
-            self.session = section
+    init(session: URLSession? = nil) {
+        if let session = session {
+            self.session = session
         } else {
             let configuration: URLSessionConfiguration = .default
             configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
