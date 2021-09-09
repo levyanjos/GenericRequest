@@ -59,14 +59,17 @@ class ViewController: UIViewController {
     
     /** Action called  when request button is tapped */
     @objc func requestButtonDidTapped(_ button: UIButton){
-        let request = Request<BoredAPI>()
-        
-        request.perform(BoredAPI.activity) { (bored: Bored?, error: Errors?) -> (Void) in
-            guard let bored = bored else {return}
-            self.textLabel.text = bored.description
             
+        let api = BoredAPIClient()
+        
+        api.getActivities { result in
+            switch result {
+            case .success(let activity):
+                self.textLabel.text = activity?.description
+            case .failure(let error):
+                self.textLabel.text = error.description
+            }
         }
     }
-
 }
 
