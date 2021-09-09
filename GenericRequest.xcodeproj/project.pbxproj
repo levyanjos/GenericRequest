@@ -21,10 +21,6 @@
 		D7E8109923259EA600B5A868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8109823259EA600B5A868 /* ViewController.swift */; };
 		D7E8109E23259EA800B5A868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E8109D23259EA800B5A868 /* Assets.xcassets */; };
 		D7E810A123259EA800B5A868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E8109F23259EA800B5A868 /* LaunchScreen.storyboard */; };
-		D7E810B223259EDE00B5A868 /* NetworkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E810AA23259EDE00B5A868 /* NetworkEndPoint.swift */; };
-		D7E810B323259EDE00B5A868 /* BoredAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E810AB23259EDE00B5A868 /* BoredAPIEndPoint.swift */; };
-		D7E810B423259EDE00B5A868 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E810AD23259EDE00B5A868 /* Request.swift */; };
-		D7E810B523259EDE00B5A868 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E810AE23259EDE00B5A868 /* NetworkProtocol.swift */; };
 		D7E810B723259EDE00B5A868 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E810B123259EDE00B5A868 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,10 +41,6 @@
 		D7E8109D23259EA800B5A868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E810A023259EA800B5A868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7E810A223259EA800B5A868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7E810AA23259EDE00B5A868 /* NetworkEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEndPoint.swift; sourceTree = "<group>"; };
-		D7E810AB23259EDE00B5A868 /* BoredAPIEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoredAPIEndPoint.swift; sourceTree = "<group>"; };
-		D7E810AD23259EDE00B5A868 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		D7E810AE23259EDE00B5A868 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		D7E810B123259EDE00B5A868 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,37 +145,9 @@
 				D7E810A223259EA800B5A868 /* Info.plist */,
 				D72B338F26E94D860092669D /* Helpers */,
 				D72B336C26E94A090092669D /* Network Infrastructure */,
-				D7E810A823259EDE00B5A868 /* Service */,
 				D7E810AF23259EDE00B5A868 /* Structs */,
 			);
 			path = GenericRequest;
-			sourceTree = "<group>";
-		};
-		D7E810A823259EDE00B5A868 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				D7E810A923259EDE00B5A868 /* EndPoints */,
-				D7E810AC23259EDE00B5A868 /* Connection */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		D7E810A923259EDE00B5A868 /* EndPoints */ = {
-			isa = PBXGroup;
-			children = (
-				D7E810AA23259EDE00B5A868 /* NetworkEndPoint.swift */,
-				D7E810AB23259EDE00B5A868 /* BoredAPIEndPoint.swift */,
-			);
-			path = EndPoints;
-			sourceTree = "<group>";
-		};
-		D7E810AC23259EDE00B5A868 /* Connection */ = {
-			isa = PBXGroup;
-			children = (
-				D7E810AD23259EDE00B5A868 /* Request.swift */,
-				D7E810AE23259EDE00B5A868 /* NetworkProtocol.swift */,
-			);
-			path = Connection;
 			sourceTree = "<group>";
 		};
 		D7E810AF23259EDE00B5A868 /* Structs */ = {
@@ -265,11 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72B338726E94A090092669D /* Endpoint.swift in Sources */,
-				D7E810B323259EDE00B5A868 /* BoredAPIEndPoint.swift in Sources */,
 				D72B339826E94D860092669D /* Dictionary+Extensions.swift in Sources */,
-				D7E810B223259EDE00B5A868 /* NetworkEndPoint.swift in Sources */,
-				D7E810B523259EDE00B5A868 /* NetworkProtocol.swift in Sources */,
-				D7E810B423259EDE00B5A868 /* Request.swift in Sources */,
 				D72B338E26E94D3F0092669D /* APIError.swift in Sources */,
 				D72B338C26E94B870092669D /* BoredAPIProvider.swift in Sources */,
 				D72B339626E94D860092669D /* CharacterSet+Extensions.swift in Sources */,
